@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div style="margin-left: 10px; margin-top: 10px;">
+        <a href="Home.html"><img src="back.png" alt="" width="30px" height="30px"></a>
+        <h2 style="text-align: center;">Create Account</h2>
+    </div>
+    <div class="register-container">
+        <div class="register-image-container">
+            <label for="photo-upload">
+                <img id="uploaded-photo" class="register-image" src="register.png" alt="register-image">
+            </label>
+            <input type="file" id="photo-upload" style="display: none;" accept="image/*" onchange="uploadPhoto(event)">
+        </div>
+        <p style="text-align: center; font-size: small; padding-bottom: 10px;">Upload Your Photo</p>
+        <form>
+            <div class="input-row"> 
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="input-row"> 
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="input-row"> 
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="input-row"> 
+                <input type="phone" id="phone" name="phone" placeholder="Phone No.">
+            </div>
+            <div class="input-row"> 
+                <div class="select-container">
+                <select type="gender" id="gender" name="gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unwilling to disclose">Unwilling to disclose</option>
+                </select>
+            </div>
+            </div>
+            <div class="input-row"> 
+                <input type="dob" id="dob" name="dob" placeholder="Date of Birth">
+            </div>
+            <div class="button-row">
+                <button type="submit" class="register"><a href="Home.html">Register</a></button>
+            </div>
+        </form>
+        <div class="checkbox-container">
+            <input type="checkbox" id="must" name="must" required>
+            <label for="must">I agree with A conditions</label>
+        </div>
+        <div style="text-align: center;">
+            <img id="uploaded-photo" src="" alt="" width="300px" height="300px" style="display: none;">
+          </div>
+    </div>
+</body>
+</html>

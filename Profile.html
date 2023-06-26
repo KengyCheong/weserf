@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="background-container">
+            <a href="Setting.html"><img class="setting-image" src="setting.png" alt="setting"></a>
+            <div class="profile-pic-container">
+                <label for="photo-upload">
+                    <img id="uploaded-photo" class="profile-pic" src="profile_pic.jpg" alt="profile-pic">
+                </label>
+                <input type="file" id="photo-upload" style="display: none;" accept="image/*" onchange="uploadPhoto(event)">
+            </div>
+            <div class="profile-container">
+                <img src="User.png" alt="User" width="100%" max-width="480px">
+            </div>
+            <div class="horizontal-images">
+                <a href=""><img src="Serf.png" alt="Serf" width="32.33%" max-width="160px"></a>
+                <a href=""><img src="Solution.png" alt="Solution" width="32.33%" max-width="160px"></a>
+                <a href=""><img src="Assist.png" alt="Assist" width="32.33%" max-width="160px"></a>
+            </div>
+            <div class="horizontal-images">
+                <img src="Prof.png" alt="Profile" width="32.33%" max-width="160px">
+                <a href="Photo.html"><img src="Album.png" alt="Album" width="32.33%" max-width="160px"></a>
+                <a href="Request.html"><img src="Friends.png" alt="Friends" width="32.33%" max-width="160px"></a>
+            </div>
+            <div class="profile-container">
+                <img src="profile_des.png" alt="profile_description" width="100%" max-width="480px">
+            </div>
+            <div style="padding-bottom: 100px;">
+                <p class="more"><a href="About.html">MORE INFO</a></p>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div>
+            <a href="Categories.html"><img src="home.png" alt="home" width="25px" height="25px"></a>
+            <a href="Request.html"><img src="friend.png" alt="friend" width="25px" height="25px"></a>
+            <div class="plus-image">
+                <a href="Post.html"><img src="plus.png" alt="plus" width="25px" height="25px"></a>
+            </div>
+            <a href="Notification.html"><img src="notification.png" alt="notification" width="25px" height="25px"></a>
+            <a href="Profile.html"><img src="profile.png" alt="profile" width="25px" height="25px"></a>
+        </div>
+    </footer>
+</html>
