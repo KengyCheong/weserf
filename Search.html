@@ -5,6 +5,22 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .search_row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search_column {
+        flex-basis: calc(100% / 3); /* Divide the container into three equal parts */
+    }
+
+    .search_column a img {
+        width: 100%;
+        max-width: 600px;
+        height: auto; /* Maintain aspect ratio */
+    }
+    </style>
     </head>
     <body>
         <div class="header" style="justify-content: left; padding-bottom: 10px;">
@@ -14,7 +30,22 @@
             <a href="Categories.html"><img style="margin-bottom: 10px;" src="search_white.png" alt="search_white" width="320px" height="50px"></a>
         </div>
         <div>
-            <div class="post-container" style="padding-top: 20px;"><img src="search_pic.png" alt="search_pic" width="320px"></div>
+            <div class="post-container" style="padding-top: 20px;">
+                <img src="search_pic_search.png" alt="search_pic_search" max-width="600px" width="100%" style="margin-bottom: -40px;">
+                <div class="search_row" style="margin-left: -20px;">
+                    <div class="search_column">
+                        <a href="#"><img src="search_pic_fashion.jpg" alt="search_pic_fashion"></a>
+                    </div>
+                    <div class="search_column" style="padding-top: 25px; padding-left: 5px;">
+                        <a href="Sos.html"><img src="search_pic_sos.jpg" alt="search_pic_sos"></a>
+                    </div>
+                    <div class="search_column" style="margin-right: -10px; padding-left: 5px;">
+                        <a href="#"><img src="search_pic_miscellaneous.jpg" alt="search_pic_miscellaneous"></a>
+                    </div>
+                </div>
+                <img src="search_pic_2nd.jpg" alt="search_pic_2nd" max-width="600px" width="100%">
+                <img src="search_pic.png" alt="search_pic" max-width="600px" width="100%">
+            </div>
         </div>
     </body>
     <footer class="footer">
@@ -25,7 +56,7 @@
             <a href="Post.html"><img src="plus.png" alt="plus" width="25px" height="25px"></a>
             </div>
             <a href="Notification.html"><img src="notification.png" alt="notification" width="25px" height="25px"></a>
-            <a href="Profile.html"><img src="profile.png" alt="profile" width="25px" height="25px"></a>
+            <a href="About.html"><img src="profile.png" alt="profile" width="25px" height="25px"></a>
         </div>
     </footer>
 </html>
