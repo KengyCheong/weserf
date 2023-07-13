@@ -304,8 +304,8 @@ p {
 }
 
 .allCategory-container img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .post-container {
@@ -630,5 +630,5 @@ p {
 .border h2 {
   text-align: center;
   font-size: small;
-  margin-right: 5px;
+  margin: 5px;
 }
