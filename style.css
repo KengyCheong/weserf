@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 .content {
@@ -493,4 +494,141 @@ p {
   padding-bottom: 10px;
   padding-left: 10px;
   margin-right: -30px;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.friend-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.friend-item .friend-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-item .friend-name {
+  font-weight: bold;
+}
+
+.friend-item .last-message {
+  font-size: 12px;
+  color: #888;
+}
+
+.search_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search_column {
+  flex-basis: calc(100% / 3);
+}
+
+.search_column a img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-content {
+  margin-right: 15px;
+  text-align: left;
+  font-size: x-small;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  flex: 1;
+}
+
+.section-content h3 {
+  margin-top: -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, cyan, blue);
+}
+
+.other-section-content {
+  margin-left: 15px;
+  text-align: right;
+  font-size: x-small;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  flex: 1;
+}
+
+.other-section-content h3 {
+  margin-top: -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-section-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, cyan, blue);
+}
+
+.date {
+  color: #65cef2;
+  font-family: 'Yantramanav';
+}
+
+.user-profile {
+  margin-right: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.border {
+  border: 2px solid;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.border h2 {
+  text-align: center;
+  font-size: small;
+  margin-right: 5px;
 }

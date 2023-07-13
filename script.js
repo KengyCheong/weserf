@@ -36,4 +36,42 @@ window.addEventListener('DOMContentLoaded', (event) => {
     };
     reader.readAsDataURL(file);
   }
+
+  // Function to display friends in the friend list
+function displayFriends() {
+  const friendList = document.getElementById('friend-list');
+  friendList.innerHTML = '';
+
+  friends.forEach(friend => {
+    const listItem = document.createElement('li');
+    listItem.classList.add('friend-item');
+
+    const profilePic = document.createElement('img');
+    profilePic.src = 'path/to/profile-pic.jpg'; // Replace with the actual profile picture source
+    profilePic.alt = 'Profile Picture';
+
+    const friendDetails = document.createElement('div');
+    friendDetails.classList.add('friend-details');
+
+    const friendName = document.createElement('div');
+    friendName.classList.add('friend-name');
+    friendName.textContent = friend;
+
+    const lastMessage = document.createElement('div');
+    lastMessage.classList.add('last-message');
+    lastMessage.textContent = 'Last message'; // Replace with the actual last message
+
+    friendDetails.appendChild(friendName);
+    friendDetails.appendChild(lastMessage);
+
+    listItem.appendChild(profilePic);
+    listItem.appendChild(friendDetails);
+
+    friendList.appendChild(listItem);
+  });
+}
+
+// Initial display of friends
+displayFriends();
+
   
