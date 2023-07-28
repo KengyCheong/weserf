@@ -620,20 +620,9 @@ html {
     fill: red;
 }
 
-
-
 .comment-box {
 display: none;
 margin-top: 10px;
-}
-
-.comment-box textarea {
-width: 100%;
-resize: none;
-}
-
-.comment-box button {
-margin-top: 5px;
 }
 
 .attachment {
@@ -654,12 +643,6 @@ resize: none;
 
 .comment-box button {
 margin-top: 5px;
-}
-
-.button-row {
-display: flex;
-align-items: center;
-gap: 10px; 
 }
 
 .input-section {
