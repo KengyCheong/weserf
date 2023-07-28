@@ -4,10 +4,14 @@
     <title>Categories</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
     <header>
-        <div class="header" style="padding-top: 20px;">
+        <div class="header" style="justify-content: left; padding-top: 20px;">
+            <a href="#" id="backButton"><img src="back.png" alt="back" width="30px" height="30px" style="margin-left: 10px;"></a>
+        </div>
+        <div class="header">
             <a href="Search.html"><img class="search-icon" src="search.png" alt="search"></a>
             <a href="Search.html"><input type="text" class="search-input" placeholder="SEARCH"></a>
             <a href="Post.html"><img class="chat-icon" src="chat.png" alt="chat"></a>
@@ -27,8 +31,149 @@
         </div>
         <div>
              <p style="margin-left: 20px; font-size: 14px;">Soon Lai and 1 other shared the post</p>
-            <div class="post-container"><img src="post.png" alt="post" max-width="600px" width="100%"></div>
-        </div>
+             <div class="section">
+                <div class="user-profile">
+                    <img src="helen.png" alt="User Profile Photo">
+                </div>
+                <div class="section-content">
+                    <h3>Helen Gilbert<span class="date">5/22/2023</span></h3>
+                    <p>If you’re looking to go on a tour of Dubai, it's important to find a travel agency that specializes in large group tours. Make sure to research online to find customer reviews and ratings so that you can make an informed decision. I'm also a fan of using a more personalized, local agency rather than a big-name one as they typically have more knowledge about the local area. Finally, make sure to ask for a detailed itinerary before you book so that you know exactly what to expect.</p>
+                    <p class="from">Retrieve from Quora</p>
+                    <div class="interaction-buttons">
+                        <div class="button-container">
+                            <button onclick="toggleLike(0)" id="likeButton0">
+                            <i class="far fa-heart heart-icon"></i>
+                            <span id="likeCount0">62</span>
+                        </button>
+                        <button onclick="toggleCommentBox(0)" id="commentButton0">
+                            <i class="far fa-comment comment-icon"></i>
+                            Comment
+                        </button>
+                        <button onclick="sharePost()">
+                            <i class="fas fa-share share-icon"></i>
+                            Share
+                        </button>
+                    </div>
+                    </div>
+                    <div class="comment-box" style="display: none;">
+                        <textarea rows="3" placeholder="Write a comment..." id="commentBox0"></textarea>
+                        <div class="input-section">
+                        <div class="attachment">
+                            <label for="fileInput0">
+                                <i class="fa fa-paperclip"></i>
+                            </label>
+                            <input type="file" id="fileInput0" style="display: none;" onchange="showPreview(0)" multiple>
+                        </div>
+                        <div class="submit-section">
+                        <button onclick="submitComment()">Submit</button>
+                        </div>
+                        </div>
+                        <div class="media-preview" id="mediaPreview0" style="display: none;"></div>
+                        </div>
+                        <div class="media-preview lightbox-gallery" style="display: none;"></div>
+                    </div>
+                    <div class="lightbox" style="display: none;">
+                        <span class="lightbox-close-button">&times;</span>
+                        <div class="lightbox-content"></div>
+                    </div>
+                </div>
+
+            <div class="section">
+                <div class="user-profile">
+                    <img src="helen.png" alt="User Profile Photo">
+                </div>
+                <div class="section-content">
+                    <h3>Helen Gilbert<span class="date">6/3/2023</span></h3>
+                    <div class="facebook-wrapper">
+                        <iframe width="100%" height="auto" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fwyneducation%2Fvideos%2F3058566017541172%2F&show_text=false&width=560&t=0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" scrolling="no"></iframe>
+                    </div>
+                    <p class="from">Retrieve from Facebook</p>
+                    <div class="interaction-buttons">
+                        <div class="button-container">
+                        <button onclick="toggleLike(1)" id="likeButton1">
+                            <i class="far fa-heart heart-icon"></i>
+                            <span id="likeCount1">21</span>
+                        </button>
+                        <button onclick="toggleCommentBox(1)" id="commentButton1">
+                            <i class="far fa-comment comment-icon"></i>
+                            Comment
+                        </button>
+                        <button onclick="sharePost()">
+                            <i class="fas fa-share share-icon"></i>
+                            Share
+                        </button>
+                    </div>
+                    </div>
+                    <div class="comment-box" style="display: none;">
+                        <textarea rows="3" placeholder="Write a comment..." id="commentBox1"></textarea>
+                        <div class="input-section">
+                        <div class="attachment">
+                            <label for="fileInput1">
+                                <i class="fa fa-paperclip"></i>
+                            </label>
+                            <input type="file" id="fileInput1" style="display: none;" onchange="showPreview(1)" multiple>
+                        </div>
+                        <div class="submit-section">
+                        <button onclick="submitComment()">Submit</button>
+                        </div>
+                        </div>
+                        <div class="media-preview" id="mediaPreview1" style="display: none;"></div>
+                        </div>
+                        <div class="media-preview lightbox-gallery" style="display: none;"></div>
+                    </div>
+                    <div class="lightbox" style="display: none;">
+                        <span class="lightbox-close-button">&times;</span>
+                        <div class="lightbox-content"></div>
+                    </div>
+                </div>
+
+            <div class="section">
+                <div class="user-profile">
+                    <img src="helen.png" alt="User Profile Photo">
+                </div>
+                <div class="section-content">
+                    <h3>Helen Gilbert<span class="date">6/29/2023</span></h3>
+                    <p>This is a how you can tie a tie.</p>
+                    <div class="facebook-wrapper">
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/4fHMbXWcoq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="from">Retrieve from Youtube</p>
+                    <div class="interaction-buttons">
+                        <div class="button-container">
+                        <button onclick="toggleLike(2)" id="likeButton2">
+                            <i class="far fa-heart heart-icon"></i>
+                            <span id="likeCount2">77</span>
+                        </button>
+                        <button onclick="toggleCommentBox(2)" id="commentButton2">
+                            <i class="far fa-comment comment-icon"></i>
+                            Comment
+                        </button>
+                        <button onclick="sharePost()">
+                            <i class="fas fa-share share-icon"></i>
+                            Share
+                        </button>
+                    </div>
+                    </div>
+                    <div class="comment-box" style="display: none;">
+                        <textarea rows="3" placeholder="Write a comment..." id="commentBox2"></textarea>
+                        <div class="input-section">
+                        <div class="attachment">
+                            <label for="fileInput2">
+                                <i class="fa fa-paperclip"></i>
+                            </label>
+                            <input type="file" id="fileInput2" style="display: none;" onchange="showPreview(2)" multiple>
+                        </div>
+                        <div class="submit-section">
+                        <button onclick="submitComment()">Submit</button>
+                        </div>
+                        </div>
+                        <div class="media-preview" id="mediaPreview2" style="display: none;"></div>
+                        <div class="media-preview lightbox-gallery" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 40px;"></div>
+            </div>
     </body>
     <footer class="footer">
         <div>
